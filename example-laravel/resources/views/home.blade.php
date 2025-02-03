@@ -45,6 +45,7 @@
                         <td class="px-6 py-4">{{ $stData->contact }}</td>
                         <td class="px-6 py-4">{{ $stData->email }}</td>
                         <td class="px-6 py-4 space-x-4">
+                           
                             <a href="{{route('edit', $stData->id)}}"> 
                                 <button class="bg-green-400 hover:bg-green-300 text-white font-semibold py-1 px-3 rounded-full">
                                     Edit

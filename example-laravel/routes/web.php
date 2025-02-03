@@ -16,7 +16,7 @@ Route::get('/d', function () {
 // });
 Route::get('/h',[UserController::class, 'sharmony']);
 Route::get('/d', [UserController::class, 'index']);
-Route::delete('delete{id}',UserController::class . '@destroy')->name('delete');
+Route::delete('delete/{id}',UserController::class . '@destroy')->name('delete');
 Route::get('create', [UserController::class, 'create'])->name('create');
 Route::post('store', [UserController::class, 'store'])->name('store');
 Route::get('edit/{student_id}',[UserController::class, 'update'])->name('edit');
