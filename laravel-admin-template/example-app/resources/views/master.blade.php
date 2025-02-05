@@ -12,6 +12,17 @@
   <link rel="stylesheet" href="assets/plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="assets/dist/css/adminlte.min.css">
+  <style>
+      .dash{
+        background-color: aquamarine;
+        width: 25%;
+        height: 150px;
+        text-align: center;
+        float: left;
+        margin: 20px;
+        padding: 30px;
+      }
+  </style>
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
@@ -24,7 +35,7 @@
 @include('layouts.sidebar')
     <!--end Main Sidebar Container -->
 
-  <!-- Content Wrapper. Contains page content -->
+ <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
@@ -40,35 +51,51 @@
             </ol>
           </div>
         </div>
-      </div><!-- /.container-fluid -->
+      </div>
+      
+
+          <section>
+      <div class="dash">
+        <h3>4</h3>
+        <h3>Parcel Received</h3>
+      </div>
+
+      <div class="dash">
+        
+        <h3>Customer List</h3>
+       <p>Full Details</p>
+      </div>
+
+      <div class="dash">
+        <h3>500</h3>
+        <h3>Total Parcel</h3>
+        <p>Full Details></p>
+      </div>
+      <div class="dash">
+       
+        <h3>Branch</h3>
+        <p>Full Details</p>
+      </div>
+      <div class="dash">
+        <h3></h3>
+        <h3>Driver</h3>
+        <p>Driver Details</p>
+      </div>
     </section>
+      
+      <!-- /.container-fluid -->
+    </section>
+
+
+    
+
 
     <!-- Main content -->
     <section class="content">
 
       <!-- Default box -->
-      <div class="card">
-        <div class="card-header">
-          <h3 class="card-title">Title</h3>
-
-          <div class="card-tools">
-            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-              <i class="fas fa-minus"></i>
-            </button>
-            <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
-              <i class="fas fa-times"></i>
-            </button>
-          </div>
-        </div>
-        <div class="card-body">
-          Start creating your amazing application!
-        </div>
-        <!-- /.card-body -->
-        <div class="card-footer">
-          Footer
-        </div>
-        <!-- /.card-footer-->
-      </div>
+      
+   @yield('content')
       <!-- /.card -->
 
     </section>
